@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerador de Senhas - Automático</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script src="./js/script.js" defer></script>
+  </head>
+  <body>
+    <div id="register-container">
+      <div id="register-banner">
+        <div id="banner-layer">
+          <h1 id="texto-inicial">Gerador <br>de senhas</h1>
+        </div>
+      </div>
+      <div id="register-form">
+        <h2>Gere sua Senha:</h2>
+          <span id="open-generate-password"></span>
+        </p>
+        <div id="generate-options" class="hide">
+          <div class="form-control">
+            <label for="length">Quantidade de caracteres:</label>
+            <input type="text" id="length" name="length" value="10" />
+          </div>
+          <div class="form-control">
+            <label for="letters">Letras:</label>
+            <input type="checkbox" id="letters" name="letters" checked />
+          </div>
+          <div class="form-control">
+            <label for="numbers">Números:</label>
+            <input type="checkbox" id="numbers" name="numbers" checked />
+          </div>
+          <div class="form-control">
+            <label for="symbols">Símbolos:</label>
+            <input type="checkbox" id="symbols" name="symbols" checked />
+          </div>
+          <button id="generate-password">Criar senha</button>
+        </div>
+        <div id="generated-password">
+          <p id="senhas">Aqui está a sua senha:</p>
+          <h4 id="senha"></h4>
+          <button id="copy-password">Copiar</button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
